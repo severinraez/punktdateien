@@ -1,3 +1,4 @@
+# Source: https://github.com/termNinja/archnumix-colorscheme
 [global_config]
   geometry_hinting = False
   title_font = Ubuntu Mono 10
