@@ -18,6 +18,7 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     elm
      nginx
      php
      python
@@ -111,7 +112,8 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(birds-of-paradise-plus
+   dotspacemacs-themes '(busybee
+                         birds-of-paradise-plus
                          spacemacs-dark
                          spacemacs-light
                          solarized-light
@@ -286,7 +288,7 @@ layers configuration. You are free to put any user code."
    [unspecified "#1F1611" "#660000" "#144212" "#EFC232" "#5798AE" "#BE73FD" "#93C1BC" "#E6E1DC"])
  '(custom-safe-themes
    (quote
-    ("44eec3c3e6e673c0d41b523a67b64c43b6e38f8879a7969f306604dcf908832c" "0e219d63550634bc5b0c214aced55eb9528640377daf486e13fb18a32bf39856" "66132890ee1f884b4f8e901f0c61c5ed078809626a547dbefbb201f900d03fd8" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "3a69621a68c2d3550a4c777ffc000e1ea66f5bc2f61112814c591e1bda3f5704" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "3e335d794ed3030fefd0dbd7ff2d3555e29481fe4bbb0106ea11c660d6001767" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "40f6a7af0dfad67c0d4df2a1dd86175436d79fc69ea61614d668a635c2cd94ab" "3632cf223c62cb7da121be0ed641a2243f7ec0130178722554e613c9ab3131de" default)))
+    ("2dd32048690787844d8cba601ed3dd8b2f419e9bd985898d0c3792671a05b96b" "44eec3c3e6e673c0d41b523a67b64c43b6e38f8879a7969f306604dcf908832c" "0e219d63550634bc5b0c214aced55eb9528640377daf486e13fb18a32bf39856" "66132890ee1f884b4f8e901f0c61c5ed078809626a547dbefbb201f900d03fd8" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "3a69621a68c2d3550a4c777ffc000e1ea66f5bc2f61112814c591e1bda3f5704" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "3e335d794ed3030fefd0dbd7ff2d3555e29481fe4bbb0106ea11c660d6001767" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "40f6a7af0dfad67c0d4df2a1dd86175436d79fc69ea61614d668a635c2cd94ab" "3632cf223c62cb7da121be0ed641a2243f7ec0130178722554e613c9ab3131de" default)))
  '(evil-want-Y-yank-to-eol t)
  '(fci-rule-character-color "#452E2E")
  '(reb-re-syntax (quote string))

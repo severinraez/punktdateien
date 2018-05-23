@@ -1,6 +1,5 @@
 [global_config]
-  borderless = True
-  hide_from_taskbar = True
+  geometry_hinting = False
   title_font = Ubuntu Mono 10
   title_use_system_font = False
 [keybindings]
