@@ -1,0 +1,3 @@
+# To source from bashrc.
+
+alias e='emacs . &'
