@@ -1,3 +1,8 @@
 # To source from bashrc.
 
-alias e='emacs . &'
+alias e='emacs . & >/dev/null 2>&1'
+
+openInEmacs() {
+    emacsclient $1 >/dev/null 2>&1 &
+}
+alias e+=openInEmacs
