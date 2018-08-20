@@ -1,5 +1,7 @@
 # To source from bashrc.
 
+export PATH=$PATH:$HOME/tools/bin
+
 alias e='emacs . & >/dev/null 2>&1'
 
 openInEmacs() {
