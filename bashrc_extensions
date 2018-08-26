@@ -1,6 +1,6 @@
 # To source from bashrc.
 
-export PATH=$PATH:$HOME/tools/bin
+export PATH=$PATH:$HOME/tools/bin:$HOME/tools/dockerized-binaries/bin
 
 alias e='emacs . & >/dev/null 2>&1'
 
