@@ -1,6 +1,7 @@
 # To source from bashrc.
 
 export PATH=$PATH:$HOME/tools/bin:$HOME/tools/dockerized-binaries/bin
+export HISTFILESIZE=10000
 
 alias e='emacs . & >/dev/null 2>&1'
 
