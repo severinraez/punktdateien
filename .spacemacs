@@ -299,8 +299,8 @@ layers configuration. You are free to put any user code."
   (setq org-agenda-files (file-expand-wildcards "~/org/*.org"))
 
   (defun prettier ()
-    "Get shell COMMAND output and insert it at point in current
-buffer."
+    "Format the buffer using prettier-ruby."
+    ; https://github.com/severinraez/prettier-ruby-docker
     (interactive) ; so we can call this with M-x
     (save-buffer)
     (erase-buffer)
