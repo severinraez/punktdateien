@@ -10,6 +10,7 @@ openInEmacs() {
 }
 alias e+=openInEmacs
 alias be="bundle exec"
+alias xo=xdg-open
 
 if which kubectl >/dev/null; then
   source <(kubectl completion bash)
