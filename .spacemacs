@@ -300,13 +300,22 @@ layers configuration. You are free to put any user code."
 
   (defun prettier ()
     "Format the buffer using prettier-ruby."
-    ; https://github.com/severinraez/prettier-ruby-docker
+                                        ; https://github.com/severinraez/prettier-ruby-docker
     (interactive) ; so we can call this with M-x
     (save-buffer)
-    (erase-buffer)
-    (insert (shell-command-to-string (concat "prettier-ruby " buffer-file-name))))
+    (if
+      (eq (call-process "ruby" nil nil nil "-c" buffer-file-name) 0)
+      (progn
+        (erase-buffer)
+        (insert (shell-command-to-string (concat "prettier-ruby " buffer-file-name)))
+      )
+      (with-output-to-temp-buffer
+          "ruby syntax"
+        (print (shell-command-to-string (concat "ruby -c " buffer-file-name)))
+      )
+    )
+  )
 )
-
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
