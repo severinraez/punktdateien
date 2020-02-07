@@ -1,6 +1,7 @@
 # To source from bashrc.
 
 export PATH=$PATH:$HOME/tools/bin:$HOME/tools/dockerized-binaries/bin
+export EDITOR=emacs
 export HISTFILESIZE=10000
 export HISTSIZE=10000
 
